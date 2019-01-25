@@ -1,1 +1,0 @@
-Please purchase Premium File to get Contact Form working.
