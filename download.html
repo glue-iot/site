@@ -72,57 +72,32 @@
 	<div class="container">
 	    	<div class="row">
 			<div class="col-md-12">
-				<div class="aligncenter"><h2 class="aligncenter">Glial</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident, <br/>doloribus omnis minus ovident, doloribus omnis minus temporibus perferendis nesciunt..</div>
+				<div><h2 class="aligncenter">Glial</h2>
+					We currently support the Debian operating system and the amd64 and armhf architectures.<br />
+					If you need to run Glial on platforms other than those listed, we recommend that you write to support@glial.pro for
+					assistance.<br />
+					<br />
+					To install Glial in Debian, one command is enough:<br />
+					wget -q -O - https://raw.githubusercontent.com/glial-iot/glial/master/install_glial_stable.sh | sudo bash<br />
+					<br />
+					<br />
+					Or, if you prefer not to run unknown scripts as root:<br />
+					apt-get install -y gnupg curl debian-archive-keyring apt-transport-https<br/>
+					apt-get update<br/>
+					release=`lsb_release -c -s`<br/>
+					echo "deb http://download.tarantool.org/tarantool/1.10/debian/ ${release} main" >
+					/etc/apt/sources.list.d/tarantool_1_10.list<br/>
+					echo "deb-src http://download.tarantool.org/tarantool/1.10/debian/ ${release} main" >>
+					/etc/apt/sources.list.d/tarantool_1_10.list<br/>
+					curl -L "http://download.tarantool.org/tarantool/1.10/gpgkey" | apt-key add -<br/>
+					echo "deb http://glial-iot.github.io/glial-nightly stretch main" > /etc/apt/sources.list.d/glial_nightly.list<br/>
+					curl -L "https://glial-iot.github.io/glial-nightly/PUBLIC.KEY" | apt-key add -<br/>
+					apt-get update<br/>
+					apt-get install -y glial<br/>
+				</div>
 				<br/>
 			</div>
 		</div>
-
-	 <div class="row">
-            <div class="col-sm-4 info-blocks">
-				<i class="icon-info-blocks material-icons">filter_drama</i>
-                <div class="info-blocks-in">
-                    <h3>OpenSource</h3>
-                    <p>Lua, Tarantool, and Glial — open-source products.</p>
-                </div>
-            </div>
-            <div class="col-sm-4 info-blocks">
-                <i class="icon-info-blocks material-icons">input</i>
-                <div class="info-blocks-in">
-                    <h3>Fast</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt</p>
-                </div>
-            </div>
-            <div class="col-sm-4 info-blocks">
-                <i class="icon-info-blocks material-icons">power_settings_new</i>
-                <div class="info-blocks-in">
-                    <h3>Powerful logic engine</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt</p>
-                </div>
-            </div>
-        </div>
-<div class="row">
-            <div class="col-sm-4 info-blocks">
-                <i class="icon-info-blocks material-icons">chat_bubble_outline</i>
-                <div class="info-blocks-in">
-                    <h3>Documentation</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt</p>
-                </div>
-            </div>
-            <div class="col-sm-4 info-blocks">
-                <i class="icon-info-blocks material-icons">repeat</i>
-                <div class="info-blocks-in">
-                    <h3>Simple</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt</p>
-                </div>
-            </div>
-            <div class="col-sm-4 info-blocks">
-                <i class="icon-info-blocks material-icons">tab_unselected</i>
-                <div class="info-blocks-in">
-                    <h3>Extensibility and customization</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt</p>
-                </div>
-            </div>
-        </div>
 	</div>
 	</section>
 
