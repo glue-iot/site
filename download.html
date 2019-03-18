@@ -83,16 +83,16 @@
 					<br />
 					<br />
 					Or, if you prefer not to run unknown scripts as root:<br />
-					<pre><code data-language="shell">apt-get install -y gnupg curl debian-archive-keyring apt-transport-https<br/>
-					apt-get update<br/>
-					release=`lsb_release -c -s`<br/>
-					echo "deb http://download.tarantool.org/tarantool/1.10/debian/ ${release} main" > /etc/apt/sources.list.d/tarantool_1_10.list<br/>
-					echo "deb-src http://download.tarantool.org/tarantool/1.10/debian/ ${release} main" >> /etc/apt/sources.list.d/tarantool_1_10.list<br/>
-					curl -L "http://download.tarantool.org/tarantool/1.10/gpgkey" | apt-key add -<br/>
-					echo "deb http://glial-iot.github.io/glial-nightly stretch main" > /etc/apt/sources.list.d/glial_nightly.list<br/>
-					curl -L "https://glial-iot.github.io/glial-nightly/PUBLIC.KEY" | apt-key add -<br/>
-					apt-get update<br/>
-					apt-get install -y glial</code></pre><br/>
+					<pre><code data-language="shell">apt-get install -y gnupg curl debian-archive-keyring apt-transport-https
+apt-get update
+release=`lsb_release -c -s`
+echo "deb http://download.tarantool.org/tarantool/1.10/debian/ ${release} main" > /etc/apt/sources.list.d/tarantool_1_10.list
+echo "deb-src http://download.tarantool.org/tarantool/1.10/debian/ ${release} main" >> /etc/apt/sources.list.d/tarantool_1_10.list
+curl -L "http://download.tarantool.org/tarantool/1.10/gpgkey" | apt-key add -
+echo "deb http://glial-iot.github.io/glial-nightly stretch main" > /etc/apt/sources.list.d/glial_nightly.list
+curl -L "https://glial-iot.github.io/glial-nightly/PUBLIC.KEY" | apt-key add -
+apt-get update
+apt-get install -y glial</code></pre>
 				</div>
 				<br/>
 			</div>
