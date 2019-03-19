@@ -73,26 +73,13 @@
 	<div class="container">
 	    	<div class="row">
 			<div class="col-md-12">
-				<div><h2 class="aligncenter">Glial</h2>
+				<div><h2 class="aligncenter">Support</h2>
 					We currently support the Debian operating system and the <b>amd64</b> and <b>armhf</b> architectures.<br />
 					If you need to run Glial on platforms other than those listed, we recommend that you write to <b>support@glial.pro</b> for
 					assistance.<br />
 					<br />
-					To install Glial in Debian, one command is enough:<br />
-					<pre><code>wget -q -O - https://raw.githubusercontent.com/glial-iot/glial/master/install_glial_stable.sh | sudo bash</code></pre><br />
-					<br />
-					<br />
-					Or, if you prefer not to run unknown scripts as root:<br />
-					<pre><code>apt-get install -y gnupg curl debian-archive-keyring apt-transport-https
-apt-get update
-release=`lsb_release -c -s`
-echo "deb http://download.tarantool.org/tarantool/1.10/debian/ ${release} main" > /etc/apt/sources.list.d/tarantool_1_10.list
-echo "deb-src http://download.tarantool.org/tarantool/1.10/debian/ ${release} main" >> /etc/apt/sources.list.d/tarantool_1_10.list
-curl -L "http://download.tarantool.org/tarantool/1.10/gpgkey" | apt-key add -
-echo "deb http://glial-iot.github.io/glial-stable stretch main" > /etc/apt/sources.list.d/glial_nightly.list
-curl -L "https://glial-iot.github.io/glial-stable/PUBLIC.KEY" | apt-key add -
-apt-get update
-apt-get install -y glial</code></pre>
+					News: <a href="https://tglink.ru/glial_news">https://tglink.ru/glial_news</a>
+					Chat: <a href="https://tglink.ru/glial_chat">https://tglink.ru/glial_chat</a>
 				</div>
 				<br/>
 			</div>
