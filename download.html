@@ -78,11 +78,11 @@
 					assistance.<br />
 					<br />
 					To install Glial in Debian, one command is enough:<br />
-					<pre><code data-language="shell">wget -q -O - https://raw.githubusercontent.com/glial-iot/glial/master/install_glial_stable.sh | sudo bash</code></pre><br />
+					<pre><code class="bash">wget -q -O - https://raw.githubusercontent.com/glial-iot/glial/master/install_glial_stable.sh | sudo bash</code></pre><br />
 					<br />
 					<br />
 					Or, if you prefer not to run unknown scripts as root:<br />
-					<pre><code data-language="shell">apt-get install -y gnupg curl debian-archive-keyring apt-transport-https
+					<pre><code class="bash">apt-get install -y gnupg curl debian-archive-keyring apt-transport-https
 apt-get update
 release=`lsb_release -c -s`
 echo "deb http://download.tarantool.org/tarantool/1.10/debian/ ${release} main" > /etc/apt/sources.list.d/tarantool_1_10.list
@@ -154,6 +154,8 @@ apt-get install -y glial</code></pre>
 <!-- Placed at the end of the document so the pages load faster -->
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 <script src="js/jquery.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
 <script src="materialize/js/materialize.min.js"></script>
