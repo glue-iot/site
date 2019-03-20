@@ -338,7 +338,7 @@ header ul.nav li ul li ul {
   border-right: none;
   border-bottom: none;
   border-left: none;
-  border-bottom-color: none;
+  border-bottom-color: transparent;
   content:none;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {color: #ffffff;background: #77a2b5;border-radius: 0;}
@@ -1491,7 +1491,6 @@ article img.pull-right, article .align-right{
 	float:right;
 	margin:5px 0 15px 15px;
 }
- ============================= */
 
 .clear-marginbot{
 	margin-bottom:0;
@@ -1581,7 +1580,7 @@ article img.pull-right, article .align-right{
 }
 
 @media (max-width: 767px) {
-.navbar-default .navbar-collapse{border-color: none;/* background: #05142b; */}
+.navbar-default .navbar-collapse{border-color: transparent;/* background: #05142b; */}
 .navbar-default .navbar-toggle .icon-bar {background-color: #868686;border-radius: 0;}
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
 background-color: rgba(221, 221, 221, 0);
