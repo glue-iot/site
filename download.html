@@ -73,7 +73,8 @@
 	<div class="container">
 	    	<div class="row">
 			<div class="col-md-12">
-				<div><h2 class="aligncenter">Download and install Glial</h2>
+				<div>
+					<h2 class="aligncenter">Download and install Glial</h2>
 					We currently support Debian operating system and <b>amd64</b> and <b>armhf</b> architectures.<br />
 					If you need to run Glial on platforms other than those listed, we recommend that you write to <b>support@glial.pro</b> for
 					assistance.<br />
@@ -89,10 +90,16 @@ release=`lsb_release -c -s`
 echo "deb http://download.tarantool.org/tarantool/1.10/debian/ ${release} main" > /etc/apt/sources.list.d/tarantool_1_10.list
 echo "deb-src http://download.tarantool.org/tarantool/1.10/debian/ ${release} main" >> /etc/apt/sources.list.d/tarantool_1_10.list
 curl -L "http://download.tarantool.org/tarantool/1.10/gpgkey" | apt-key add -
-echo "deb http://glial-iot.github.io/glial-stable stretch main" > /etc/apt/sources.list.d/glial_nightly.list
+echo "deb http://glial-iot.github.io/glial-stable stretch main" > /etc/apt/sources.list.d/glial-stable.list
 curl -L "https://glial-iot.github.io/glial-stable/PUBLIC.KEY" | apt-key add -
 apt-get update
 apt-get install -y glial</code></pre>
+					<h2 class="aligncenter">Run Glial as a Docker container</h2>
+					Glial container is available at Docker Hub.
+					To launch Glial, just pull the container from Docker Hub and run it:<br>
+					<pre><code>docker pull glial/glial
+docker run -p 8888:8080 -td glial/glial</code></pre>
+					Voila, you've got a running Glial instance on 8888 port.
 				</div>
 				<br/>
 			</div>
